@@ -24,7 +24,10 @@ class EnterprisesController < ApplicationController
   # POST /enterprises
   # POST /enterprises.json
   def create
-    @enterprise = Enterprise.new(enterprise_params)
+    new_params = enterprise_params
+    new_params['user_id'] = session[:user_id]
+
+    @enterprise = Enterprise.new(new_params)
 
     respond_to do |format|
       if @enterprise.save
