@@ -8,6 +8,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'rufus-scheduler', '~> 3.2', '>= 3.2.2'
+gem 'slack-notifier'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
