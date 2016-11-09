@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @enterprise.name %>
+</p>
+
+<p>
+  <strong>Slack channel:</strong>
+  <%= @enterprise.slack_channel %>
+</p>
+
+<p>
+  <strong>Slack webhook:</strong>
+  <%= @enterprise.slack_webhook %>
+</p>
+
+<p>
+  <strong>Slack username:</strong>
+  <%= @enterprise.slack_username %>
+</p>
+
+<%= link_to 'Edit', edit_enterprise_path(@enterprise) %> |
+<%= link_to 'Back', enterprises_path %>
