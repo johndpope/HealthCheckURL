@@ -1,4 +1,4 @@
 class Url < ApplicationRecord
 	belongs_to :enterprise
-	has_may :reports
+	has_many :reports
 end
